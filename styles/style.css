@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../assets/images/background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100dvh; 
+}
+.logo{
+    width: 128px;
+    height: auto;
+    border-radius: 50%;
+}
+.content{
+    width: 462px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 35px;
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.subscribers-number{
+    font-weight: 300;
+    font-size: 18px;
+    color: #909090;
+    margin-bottom: 14px;
+}
+.offices, .change, .course{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.course{
+    margin-bottom: 25.5px;
+}
+.join-channel {
+    width: 200px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    background-color: #1c87ca;
+    margin-bottom: 24px;
+    line-height: 1.2; /* убираем 0 */
+    text-decoration: none;
+}
+
+.cta-exchange{
+    font-size: 12px;
+    font-weight: 300;
+    color: #909090;
+    margin-bottom: 26px;
+    text-align: center;
+}
+.promo{
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: #767676;
+}
+span{
+
+    font-weight: 700;
+}
+
+.shine-animation{
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #87c3eb 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+}
+
+@-webkit-keyframes bg-move {
+    0%   { background-position: -500px 0; }
+    100% { background-position: 1000px 0; }
+  }
+
+@keyframes bg-move {
+    0%   { background-position: -500px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 340px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .subscribers-number{
+        font-size: 17px;
+    }
+    .offices, .change, .course{
+        font-size: 15px;
+    }
+    .join-channel{
+        width: 208px;
+    }
+    .wrapper{
+        align-items: unset;
+    }
+    .content{
+        height: fit-content;
+        margin-top: 51px;
+    }
+}  
